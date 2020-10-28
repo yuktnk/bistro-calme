@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>サンプルサイト</title>
-	<link href="./assets/css/styles.min.css" rel="stylesheet">
+	<title><?php bloginfo('name'); ?></title>
+	<link href="<?php echo get_template_directory_uri(); ?>/assets/css/styles.min.css" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="./assets/js/main.js"></script>
@@ -16,7 +16,7 @@
 	<header class="header">
 		<div class="header_inner">
 			<div class="header_logo">
-				<h1><a href="/"><img src="./assets/img/common/logo@2x.png" alt="BISTRO CALME"></a></h1>
+				<h1><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo@2x.png" alt="BISTRO CALME"></a></h1>
 			</div>
 
 			<div class="header_desc">
@@ -62,9 +62,9 @@
 	</header>
 
 	<div class="jumbotron">
-		<div class="jumbotron_item" style="background-image: url('./assets/img/home/jumbotron-1@2x.jpg')"></div>
-		<div class="jumbotron_item" style="background-image: url('./assets/img/home/jumbotron-2@2x.jpg')"></div>
-		<div class="jumbotron_item" style="background-image: url('./assets/img/home/jumbotron-3@2x.jpg')"></div>
+		<div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/jumbotron-1@2x.jpg')"></div>
+		<div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/jumbotron-2@2x.jpg')"></div>
+		<div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/jumbotron-3@2x.jpg')"></div>
 	</div>
 
 	<section class="sec">
@@ -78,7 +78,7 @@
 					<article class="news">
 						<div class="news_pic">
 							<a href="#">
-								<img src="./assets/img/home/news_img-1.jpg" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/news_img-1.jpg" alt="">
 							</a>
 						</div>
 						<div class="news_meta">
@@ -99,7 +99,7 @@
 					<article class="news">
 						<div class="news_pic">
 							<a href="#">
-								<img src="./assets/img/home/news_img-2.jpg" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/news_img-2.jpg" alt="">
 							</a>
 						</div>
 						<div class="news_meta">
@@ -120,7 +120,7 @@
 					<article class="news">
 						<div class="news_pic">
 							<a href="#">
-								<img src="./assets/img/home/news_img-3.jpg" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/news_img-3.jpg" alt="">
 							</a>
 						</div>
 						<div class="news_meta">
@@ -218,7 +218,7 @@
 
 	<link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<script src="./assets/js/home.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/home.js"></script>
 
 </body>
 
