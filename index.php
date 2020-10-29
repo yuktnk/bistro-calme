@@ -1,9 +1,11 @@
 <?php get_header(); ?>
+	<?php if (is_home()): ?>
 	<div class="jumbotron">
 		<div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/jumbotron-1@2x.jpg')"></div>
 		<div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/jumbotron-2@2x.jpg')"></div>
 		<div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/jumbotron-3@2x.jpg')"></div>
 	</div>
+	<?php endif; ?>
 
 	<section class="sec">
 		<div class="container">
