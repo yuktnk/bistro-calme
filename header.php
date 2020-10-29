@@ -6,10 +6,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="<?php echo get_template_directory_uri(); ?>/assets/css/styles.min.css" rel="stylesheet">
-	<?php 
+	<?php
 		wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.6.1/css/all.css');
-		wp_enqueue_script('jQuery');
-		wp_enqueue_script('bistro-calme-main', get_template_directory_uri().'/assets/js/main.js');
+		wp_enqueue_script('jquery');
+		wp_enqueue_script('bistro-calme-main', get_template_directory_uri() . '/assets/js/main.js');
 		wp_head();
 	?>
 </head>
