@@ -25,3 +25,6 @@ function my_document_title_parts($title){
     }
     return $title;
 }
+
+// アイキャッチ画像を使用可能にする
+add_theme_support( 'post-thumbnails' );
