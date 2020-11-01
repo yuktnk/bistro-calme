@@ -28,3 +28,6 @@ function my_document_title_parts($title){
 
 // アイキャッチ画像を使用可能にする
 add_theme_support( 'post-thumbnails' );
+
+// カスタムメニュー機能を使用可能にする
+add_theme_support('menus');
