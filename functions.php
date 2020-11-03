@@ -40,3 +40,17 @@ function my_comment_form_default_fields($args) {
   $args['url'] = '';    // 「サイト」を削除
   return $args;
 }
+
+// pre_get_posts（アクションフック）を設定してメインクエリの内容を変更する
+add_action('pre_get_posts', 'my_pre_get_posts');
+function my_pre_get_posts($query) {
+  // 管理画面、メインクエリ以外には設定しない
+  if ( is_admin() || !$query->is_main_query() ) {
+    return;
+  }
+  // トップページで表示する投稿数を3件にする
+  if ( $query->is_home() ) {
+    $query->set('posts_per_page', 3);
+    return;
+  }
+}
