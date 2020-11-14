@@ -62,3 +62,9 @@ function my_wpautop() {
     remove_filter('the_content', 'wpautop');
   }
 }
+// ブロックエディターにCSSを適用する
+add_action('after_setup_theme', 'my_editor_suport');
+function my_editor_suport(){
+  add_theme_support('editor-styles');
+  add_editor_style('assets/css/editor-style.css');
+}
